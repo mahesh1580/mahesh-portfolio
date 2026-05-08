@@ -188,53 +188,50 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);font-si
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
-
-<!-- HERO -->
-<section id="hero" class="hero">
-
-  <div class="hero-orb orb1"></div>
-  <div class="hero-orb orb2"></div>
-
-  <!-- right SIDE CONTENT -->
-  <div class="hero-content">
-
-    <div class="hero-eyebrow">
-      <span class="hero-dot"></span>
-      Hii i'm MAHESH. Open for Opportunities to start Career
-    </div>
-<!-- left SIDE IMAGE -->
-<div class="hero-image"
-     style="
-     flex:1;
-     display:flex;
-     justify-content:center;
-     align-items:center;
-     margin-right:120px;
+<!-- HERO SECTION -->
+<section class="hero" style="
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 100px;
+  min-height: 100vh;
+  gap: 60px;
 ">
 
-  <img 
-    src="Confident Portrait on Blue Backdrop.png" 
-    alt="Mahesh Photo"
+  <!-- LEFT SIDE: IMAGE -->
+  <div class="hero-image" style="
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  ">
+    <img 
+      src="Confident Portrait on Blue Backdrop.png" 
+      alt="Mahesh Photo"
+      style="
+        width: 350px;
+        height: 430px;
+        object-fit: cover;
+        object-position: top;
+        border-radius: 30px;
+        border: 4px solid #9b87f5;
+        box-shadow:
+          0 0 25px rgba(155,135,245,0.4),
+          0 0 60px rgba(78,161,255,0.25);
+        transition: 0.4s ease;
+      "
+    />
+  </div>
 
-    style="
-    width:350px;
-    height:430px;
-
-    object-fit:cover;
-
-    /* crop only bottom */
-    object-position:top;
-
-    border-radius:30px;
-
-    border:4px solid #9b87f5;
-
-    box-shadow:
-      0 0 25px rgba(155,135,245,0.4),
-      0 0 60px rgba(78,161,255,0.25);
-
-    transition:0.4s ease;
-</div>>
+  <!-- RIGHT SIDE: CONTENT -->
+  <div class="hero-content" style="
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  ">
     <h1 class="hero-name">
       Mahesh<br>
       <span class="gradient">Thota</span>
@@ -252,19 +249,43 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);font-si
       delivering high-quality results and enhancing user experience.
     </p>
 
-    <div class="hero-cta">
-      <a href="MAHESH___THOTA___RESUME___SOFTWARE_.pdf"
-         class="btn-primary">
-         Download Resume
+    <!-- CTA BUTTONS -->
+    <div class="hero-cta" style="
+      display: flex;
+      flex-direction: row;
+      gap: 16px;
+      flex-wrap: wrap;
+    ">
+      <a href="MAHESH___THOTA___RESUME___SOFTWARE_.pdf" class="btn-primary">
+        Download Resume
       </a>
-      <div class="hero-cta">
-    <a href="#projects" class="btn-primary">
+      <a href="#projects" class="btn-primary">
         View Projects
-    </a>
-
-    <a href="mailto:maheshthota931@gmail.com" class="btn-outline">
+      </a>
+      <a href="mailto:maheshthota931@gmail.com" class="btn-outline">
         Contact Me
-    </a>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- RESPONSIVE: stack on mobile -->
+<style>
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column !important;
+      padding: 40px 24px !important;
+      text-align: center;
+    }
+    .hero-content {
+      align-items: center !important;
+    }
+    .hero-cta {
+      justify-content: center;
+    }
+  }
+</style>
 </div>
     </div>
         </div>   
