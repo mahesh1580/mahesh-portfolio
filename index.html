@@ -189,6 +189,45 @@ footer{text-align:center;padding:2rem;border-top:1px solid var(--border);font-si
   </ul>
 </nav>
 <!-- HERO SECTION -->
+  <!-- BLINKING BADGE -->
+<div style="
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 999px;
+  padding: 8px 18px;
+  margin-bottom: 10px;
+">
+  <!-- Blinking green dot -->
+  <span style="
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blink 1.2s infinite;
+  "></span>
+
+  <span style="
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: #a78bfa;
+    text-transform: uppercase;
+  ">
+    Hii I'm Mahesh. Open for opportunities to start career
+  </span>
+</div>
+
+<!-- ADD THIS CSS (once, anywhere in your <style> tag) -->
+<style>
+  @keyframes blink {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.2; transform: scale(0.8); }
+  }
+</style>
 <section class="hero" style="
   display: flex;
   flex-direction: row;
